@@ -18,7 +18,6 @@ PARAMETERS = {
 }
 
 class TreeTagger:
-
     def __init__(self, parameter_set='english_ptb', token=True, lemma=True, sgml=True, no_unknown=True):
         if sys.platform not in BINARIES:
             raise NotImplementedError(f"Platform {sys.platform} not supported.")
@@ -37,8 +36,4 @@ class TreeTagger:
 
     def tag(self, input_sgml):
         output_sgml = exec_via_temp(input_sgml, self._command, outfile=False)
-
-
         return output_sgml
-
-
