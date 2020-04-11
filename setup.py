@@ -8,11 +8,11 @@ setup(
     name="ldg",
     description="Luke's personal Python snippet library",
     long_description=desc,
+    long_description_content_type="text/markdown",
     author="Luke Gessler",
     author_email="lukegessler@gmail.com",
     url="https://github.com/lgessler/ldg-personal",
-    package_dir={'': 'ldg'},
-    packages=find_packages('ldg'),
+    packages=find_packages(),
     version="0.0.1",
     install_requires=[
     ],
