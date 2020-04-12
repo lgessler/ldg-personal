@@ -12,7 +12,9 @@ setup(
     author="Luke Gessler",
     author_email="lukegessler@gmail.com",
     url="https://github.com/lgessler/ldg-personal",
-    packages=find_packages(),
+    packages=['ldg'],
+    package_dir={'ldg': 'ldg'},
+    package_data={'ldg': ['ldg/bin/*', 'ldg/bin/linux/*']},
     version="0.0.1",
     install_requires=[
     ],
