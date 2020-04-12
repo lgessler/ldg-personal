@@ -13,7 +13,6 @@ setup(
     author_email="lukegessler@gmail.com",
     url="https://github.com/lgessler/ldg-personal",
     packages=find_packages(),
-    include_package_data=True,
     version="0.0.1",
     install_requires=[
     ],
